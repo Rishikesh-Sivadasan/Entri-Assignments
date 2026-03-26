@@ -1,0 +1,74 @@
+#Simple Calculator
+
+
+def sum (a,b):
+    return (a+b)
+
+def sub (a,b):
+    return (a-b)
+
+def mul (a,b):
+    return (a*b)
+
+def mod (a,b):
+    return (a % b)
+
+def exponent (a,b):
+    return (a**b)
+
+def f_div (a,b):
+    return (a//b)
+
+def div (a,b):
+    return (a/b)
+
+num1 =0
+num2=0
+
+def input_data():
+    a = int (input("Enter the 1st number: "))
+    b = int (input("Enter the 2nd number: "))
+    return a,b
+
+
+def arithmetic ():
+
+    while True:
+        print("Welcome to simple calculator")
+
+        option = int(input("1.Addition\n2.Subtraction\n3.Multiplication\n4.Modulo\n5.Exponentiation\n6.Floor Division\n7.Division\n8.Exit\n "))
+     
+        
+        
+        if option == 1:
+            num1,num2 = input_data()
+            print (f"\nSum of {num1} and {num2}: {sum(num1,num2)}\n")
+        elif option == 2:
+             num1,num2 = input_data()
+             print (f"\nSubtraction of {num1} and {num2} is: {sub(num1,num2)}\n")
+        elif option ==3:
+             num1,num2 = input_data()
+             print (f"\nMultiplication of {num1} and {num2} is: {mul(num1,num2)}\n")
+        elif option ==4:
+             num1,num2 = input_data()
+             print (f"\nModulo of {num1} and {num2} is: {mod(num1,num2)}\n")
+        elif option ==5:
+             num1,num2 = input_data()
+             print (f"\nExponentiation of {num1} and {num2} is: {exponent(num1,num2)}\n")
+        elif option ==6:
+             num1,num2 = input_data()
+             print (f"\nFloor Divison of {num1} and {num2} is: {f_div(num1,num2)}\n")
+        elif option ==7:
+             num1,num2 = input_data()
+             print (f"\nDivision of {num1} and {num2} is: {div(num1,num2)}\n")
+
+        elif option ==8:
+            break
+
+    
+        else:
+            print("\nInvalid choice..try again!!!\n")
+            continue
+
+      
+arithmetic ()
