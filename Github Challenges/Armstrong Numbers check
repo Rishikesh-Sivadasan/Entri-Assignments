@@ -1,0 +1,21 @@
+# Armstrong number check
+
+num1 = int(input("Enter your number: "))
+
+digits = (len(str(num1)))
+
+value = 0
+
+for i in str(num1):
+    
+    value += (int(i) ** digits)
+        
+
+print(f"The result of operation is: {value}")
+
+if value == num1:
+    print(f"{num1} is a Armstrong number")
+
+else:
+    print(f"{num1} is NOT a Armstrong number")
+    
