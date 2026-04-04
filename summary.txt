@@ -1,0 +1,18 @@
+1. Three .py files are created - main.py, average.py and grade.py
+2. Main.py receives the user inputs based on subjects(here subjects are also added for a better user experience)
+3. Marks are stored in to a list, marks[]
+4. All the marks entered are inserted in order to the list, a while loop is used for this
+5. If statement is implemented to check if the marks entered are between 0 and 100, if any value entered
+    is out of this range, then a warning message pops-up and the loop bounce to the top and re-iterate
+6. Try and except is used to check if any non-numerical values are entered by the user, if so
+    the loop will display a warning statement and re-iterate the current loop
+7. After fetching all the input marks, then the main prgram calls the calculate_avaerage function
+    and pass the marks to that function as a parameter
+8. In the calculate average function in average.py file will receive the marks as input and iterate inside the list
+    and add all the marks together and then find the avaerage(total marks/number of subjects)
+9. After calculating avaerage the function returns the average value to the main function
+10. After receiveng the average function, the main function will call the get_grade function inside grade.py file and 
+    pass the average as a parameter to this function
+11. Inside get_grade function based on the average marks criterias the appropriate grade is returned to the
+    main fucntion
+12. Both Average and final grade is displayed on terminal
