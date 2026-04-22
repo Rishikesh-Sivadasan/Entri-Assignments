@@ -1,0 +1,62 @@
+
+# # #Generator
+
+# # import time
+
+# import re
+
+# # #Task 1
+# # def even_numbers ():
+# #     i = 2
+
+# #     while True:
+# #         time.sleep(1) # for better visibility of result, adding a 1sec time delay
+# #         yield i
+# #         i += 2
+    
+
+
+# # fun_output= even_numbers ()
+
+# # for i in fun_output:
+# #      print(i)
+
+
+# # #Decorator
+
+# # def greet(fun01):
+# #     def wrapper():
+# #         print("Hello !!!...",end=" ")
+# #         fun01()
+# #     return wrapper
+        
+
+
+# # @greet
+# # def name():
+# #     print("My name is Alice!!")
+
+
+# # name()
+
+
+# #Task 2
+
+# data = input("Enter your data: ")
+
+# pattern1 = r"[a-zA-Z0-9_/\().,)+]+\@[a-zA-Z0-9]+\.[a-zA-Z]+"
+
+# pattern2 = r"[-0-9()+][-0-9()+ /]+"
+
+# email_id = re.findall(pattern1,data)
+
+# phone_number = re.findall(pattern2,data)
+
+# print(email_id)
+
+# print(phone_number)
+
+# pattern3 = "python"
+
+# print(re.sub(pattern3,"JAVA",data))
+
